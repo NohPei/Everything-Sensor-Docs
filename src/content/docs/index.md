@@ -1,4 +1,7 @@
-# Everything Sensor
+---
+title: Everything Sensor
+description: Documentation for the Everything Sensor, a multimodal environmental sensing unit built for the NSF Center for Pandemic Insights.
+---
 
 **Everything Sensor** is a multimodal environmental sensing unit designed to be
 dropped into a wildlife area, connected to power, and left to collect data —
@@ -21,12 +24,12 @@ This research is supported by and part of the [NSF Center for Pandemic Insights]
 
 ## Where to go next
 
-- **[Hardware](Hardware/Components.md)** — bill of materials, sensor bus addresses, and wiring.
-- **[Software: Overview](Software/Overview.md)** — architecture, data flow, and the on-board `sensors` package.
-- **[Software: Board Setup](Software/Board-Setup.md)** — flashing the board, storage, and real-time clock setup.
-- **[Software: Data Logging](Software/Data-Logging.md)** — the logger process and systemd services that run it.
-- **[Software: Networking](Software/Networking.md)** — remote access to the wireless unit via a NetBird/OpenWrt router.
-- **[Research Notes](Research-Notes.md)** — why these sensors are read as voltage trends rather than calibrated gas concentrations, and the adaptive sensing direction of the project.
+- **[Hardware](/hardware/components/)** — bill of materials, sensor bus addresses, and wiring.
+- **[Software: Overview](/software/overview/)** — architecture, data flow, and the on-board `sensors` package.
+- **[Software: Board Setup](/software/board-setup/)** — flashing the board, storage, and real-time clock setup.
+- **[Software: Data Logging](/software/data-logging/)** — the logger process and systemd services that run it.
+- **[Software: Networking](/software/networking/)** — remote access to the wireless unit via a NetBird/OpenWrt router.
+- **[Research Notes](/research-notes/)** — why these sensors are read as voltage trends rather than calibrated gas concentrations, and the adaptive sensing direction of the project.
 
 ## Questions
 

@@ -1,4 +1,7 @@
-# Software Overview
+---
+title: Software Overview
+description: Repository layout, data flow, and fault isolation for the Everything Sensor logger.
+---
 
 ## Repository layout (on the board)
 
@@ -40,11 +43,12 @@ raw voltage / I2C reads
  offline post-processing: normalization → features → correlation/ML
 ```
 
-!!! warning "Sampling rate discrepancy"
-    The project README describes sensors as sampling "at 1Hz," but `logger.py`
-    currently uses `INTERVAL = 15` (seconds) between samples, plus a 60-second
-    warmup on startup before the first write. Worth confirming which is the
-    intended rate — this documents the code as it currently runs.
+:::caution[Sampling rate discrepancy]
+The project README describes sensors as sampling "at 1Hz," but `logger.py`
+currently uses `INTERVAL = 15` (seconds) between samples, plus a 60-second
+warmup on startup before the first write. Worth confirming which is the
+intended rate — this documents the code as it currently runs.
+:::
 
 ## Fault isolation
 
@@ -55,11 +59,11 @@ crashing the whole logging loop, and the failure (plus recovery) is logged to
 doesn't take down data collection for the rest.
 
 For the full column layout and service configuration, see
-[Data Logging](Data-Logging.md).
+[Data Logging](/software/data-logging/).
 
 ## Where this is headed
 
 The current pipeline is intentionally simple — log everything, process later.
-See [Research Notes](../Research-Notes.md) for the adaptive-sensing direction
+See [Research Notes](/research-notes/) for the adaptive-sensing direction
 the project is working toward (on-board baselining, adaptive sampling rates,
 and event-triggered resource allocation).

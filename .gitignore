@@ -1,5 +1,10 @@
-site/
-__pycache__/
-*.pyc
-.venv/
-venv/
+# build output
+dist/
+.astro/
+
+# dependencies
+node_modules/
+
+# environment variables
+.env
+.env.production

@@ -1,4 +1,7 @@
-# Components
+---
+title: Components
+description: Bill of materials, I2C bus addresses, and analog gas sensor wiring for the Everything Sensor.
+---
 
 ## Bill of materials
 
@@ -20,11 +23,12 @@
 | ADC | ADS1115 | 4-channel ADC for the analog gas sensors |
 | Misc | Perma-proto board, jumper wires, resistors | Breadboarding/wiring |
 
-!!! warning "SGP30 no longer in the active pipeline"
-    SGP30 was part of the original supply list but there is no `sensors/sgp30.py`
-    module in the current package and `logger.py` does not read from it. If it's
-    still physically on a unit, it isn't being logged — worth confirming whether
-    that's intentional before calling this list final.
+:::caution[SGP30 no longer in the active pipeline]
+SGP30 was part of the original supply list but there is no `sensors/sgp30.py`
+module in the current package and `logger.py` does not read from it. If it's
+still physically on a unit, it isn't being logged — worth confirming whether
+that's intentional before calling this list final.
+:::
 
 Sensor datasheets for the four analog gas sensors are kept locally (in the
 project's `sensor_datasheets/` directory) since these are lower-level, less
@@ -59,5 +63,5 @@ The divider itself is the same across all four: `R_TOP = 57 kΩ`, `R_BOTTOM = 10
 giving a scale factor of `(57k + 100k) / 100k ≈ 1.57` to reconstruct the sensor's
 true AO voltage from the voltage seen at the ADC pin.
 
-See [Research Notes](../Research-Notes.md) for why these are read as a voltage
+See [Research Notes](/research-notes/) for why these are read as a voltage
 trend rather than converted to ppm/ppb.

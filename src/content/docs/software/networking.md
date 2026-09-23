@@ -1,4 +1,7 @@
-# Networking (remote access)
+---
+title: Networking (remote access)
+description: Remote SSH/VPN access to the sdzwa-wireless unit via a NetBird/OpenWrt travel router.
+---
 
 `sdzwa-wireless` doesn't have a fixed ethernet connection in the field, so a
 travel router running [NetBird](https://netbird.io/) is used to give remote
@@ -31,7 +34,8 @@ peer. Rename the peer/hostname at that point — otherwise it stays
 On the NetBird side, once connected, the router's address changes from the
 static `192.168.1.1` to its assigned NetBird address (e.g. `10.244.32.1`).
 
-!!! note
-    Keep physical setup notes for this router in the lab notebook alongside
-    the digital ones — the flashing step in particular is finicky enough that
-    a photo/note of what "correct" looks like is worth having on hand.
+:::note
+Keep physical setup notes for this router in the lab notebook alongside
+the digital ones — the flashing step in particular is finicky enough that
+a photo/note of what "correct" looks like is worth having on hand.
+:::

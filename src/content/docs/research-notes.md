@@ -1,4 +1,7 @@
-# Research Notes
+---
+title: Research Notes
+description: Why the analog gas sensors are read as voltage trends, and the adaptive sensing direction of the project.
+---
 
 ## "These are cheap, MOX, analog gas sensors — how can they capture meaningful data?"
 
@@ -25,13 +28,14 @@ sensing modalities, not just within one.
 We're working in the **sensor space**, not the **gas space**, by design —
 that's what makes these low-cost, off-the-shelf components usable at all.
 
-!!! note
-    The calibration curves for MQ/MiCS-family sensors are non-linear, depend
-    on humidity and temperature, vary sensor-to-sensor, vary with the chosen
-    load resistor, and vary with heater aging. Converting to ppm without
-    proper calibration is not just uninformative — it's actively misleading.
-    Staying in voltage space is the more honest representation of what's
-    actually measured.
+:::note
+The calibration curves for MQ/MiCS-family sensors are non-linear, depend
+on humidity and temperature, vary sensor-to-sensor, vary with the chosen
+load resistor, and vary with heater aging. Converting to ppm without
+proper calibration is not just uninformative — it's actively misleading.
+Staying in voltage space is the more honest representation of what's
+actually measured.
+:::
 
 The intended normalization approach: let sensors run to establish a clean-air
 baseline, then normalize subsequent readings against it —
