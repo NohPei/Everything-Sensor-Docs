@@ -24,12 +24,12 @@ This research is supported by and part of the [NSF Center for Pandemic Insights]
 
 ## Where to go next
 
-- **[Hardware](/hardware/components/)** — bill of materials, sensor bus addresses, and wiring.
-- **[Software: Overview](/software/overview/)** — architecture, data flow, and the on-board `sensors` package.
-- **[Software: Board Setup](/software/board-setup/)** — flashing the board, storage, and real-time clock setup.
-- **[Software: Data Logging](/software/data-logging/)** — the logger process and systemd services that run it.
-- **[Software: Networking](/software/networking/)** — remote access to the wireless unit via a NetBird/OpenWrt router.
-- **[Research Notes](/research-notes/)** — why these sensors are read as voltage trends rather than calibrated gas concentrations, and the adaptive sensing direction of the project.
+- **[Hardware](hardware/components/)** — bill of materials, sensor bus addresses, and wiring.
+- **[Software: Overview](software/overview/)** — architecture, data flow, and the on-board `sensors` package.
+- **[Software: Board Setup](software/board-setup/)** — flashing the board, storage, and real-time clock setup.
+- **[Software: Data Logging](software/data-logging/)** — the logger process and systemd services that run it.
+- **[Software: Networking](software/networking/)** — remote access to the wireless unit via a NetBird/OpenWrt router.
+- **[Research Notes](research-notes/)** — why these sensors are read as voltage trends rather than calibrated gas concentrations, and the adaptive sensing direction of the project.
 
 ## Questions
 

@@ -59,11 +59,11 @@ crashing the whole logging loop, and the failure (plus recovery) is logged to
 doesn't take down data collection for the rest.
 
 For the full column layout and service configuration, see
-[Data Logging](/software/data-logging/).
+[Data Logging](../data-logging/).
 
 ## Where this is headed
 
 The current pipeline is intentionally simple — log everything, process later.
-See [Research Notes](/research-notes/) for the adaptive-sensing direction
+See [Research Notes](../../research-notes/) for the adaptive-sensing direction
 the project is working toward (on-board baselining, adaptive sampling rates,
 and event-triggered resource allocation).

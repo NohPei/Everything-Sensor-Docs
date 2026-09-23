@@ -10,7 +10,7 @@ Steps to take a bare Olimex Lime2 board to a running sensing unit.
 Flash the board with [Armbian](https://www.armbian.com/olimex-lime-2/).
 
 - Default login: user `root`, password `1234`
-- This assumes the Lime2 Shield + Samsung 870 EVO SSD hardware described in [Components](/hardware/components/)
+- This assumes the Lime2 Shield + Samsung 870 EVO SSD hardware described in [Components](../../hardware/components/)
 
 ## 2. Network + packages
 

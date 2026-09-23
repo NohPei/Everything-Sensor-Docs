@@ -63,5 +63,5 @@ The divider itself is the same across all four: `R_TOP = 57 kΩ`, `R_BOTTOM = 10
 giving a scale factor of `(57k + 100k) / 100k ≈ 1.57` to reconstruct the sensor's
 true AO voltage from the voltage seen at the ADC pin.
 
-See [Research Notes](/research-notes/) for why these are read as a voltage
+See [Research Notes](../../research-notes/) for why these are read as a voltage
 trend rather than converted to ppm/ppb.

@@ -40,7 +40,7 @@ sen0571_raw, sen0571_v_adc, sen0571_v_ao
 For the four analog sensors: `raw` is the ADS1115 code, `v_adc` is the
 voltage measured at the ADC pin, `v_ao` is that voltage scaled back up to the
 sensor's true analog-output voltage (see the divider math in
-[Components](/hardware/components/#analog-gas-sensor-wiring)), and `rs`
+[Components](../../hardware/components/#analog-gas-sensor-wiring)), and `rs`
 is the derived sensor resistance (not computed for SEN0571).
 
 `timestamp` is `datetime.now(timezone.utc).isoformat()` — always UTC.
