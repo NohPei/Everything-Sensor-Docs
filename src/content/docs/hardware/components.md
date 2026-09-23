@@ -12,16 +12,23 @@ description: Bill of materials, I2C bus addresses, and analog gas sensor wiring 
 | Storage (`sdzwa-wired`) | Samsung 870 EVO 1TB SSD (SATA) | Long-term data storage, custom power + SATA cable |
 | Storage (`sdzwa-wireless`) | microSD, 128GB+ | Portable storage for temporary/event-based deployments |
 | RTC | DS3231 + CR2032 battery | Keeps accurate time across power loss (onboard RTC drifts too much) |
-| Particulate matter | Adafruit PMSA003I | PM1 / PM2.5 / PM10 |
-| Temp/humidity | Adafruit SHT45 | Temperature, relative humidity |
-| CO₂ | Adafruit SCD41 | CO₂, temperature, relative humidity |
-| Gas/VOC (digital) | Adafruit BME688 | Temperature, humidity, pressure, gas resistance |
+| Particulate matter | [Adafruit PMSA003I](https://learn.adafruit.com/pmsa003i) | PM1 / PM2.5 / PM10 |
+| Temp/humidity | [Adafruit SHT45](https://learn.adafruit.com/adafruit-sht40-temperature-humidity-sensor) | Temperature, relative humidity |
+| CO₂ | [Adafruit SCD41](https://learn.adafruit.com/adafruit-scd-40-and-scd-41) | CO₂, temperature, relative humidity |
+| Gas/VOC (digital) | [Adafruit BME688](https://learn.adafruit.com/adafruit-bme680-humidity-temperature-barometic-pressure-voc-gas) | Temperature, humidity, pressure, gas resistance |
 | Gas (analog) | MQ-137 | Ammonia — read via ADC as a voltage trend |
 | Gas (analog) | MQ-4 | Methane/natural gas — read via ADC as a voltage trend |
 | Gas (analog) | MiCS-5524 | VOC/CO — read via ADC as a voltage trend |
 | Gas (analog) | DFRobot SEN0571 (MEMS) | Gas sensor — read via ADC as a voltage trend |
 | ADC | ADS1115 | 4-channel ADC for the analog gas sensors |
 | Misc | Perma-proto board, jumper wires, resistors | Breadboarding/wiring |
+
+:::note
+The PMSA003I, SCD41, and ADS1115 guides above are per-device. The SHT45 and
+BME688 links go to Adafruit's family guides (SHT4x covers the SHT40/41/45
+line; the BME680 guide covers BME688 as the newer variant) — same sensor,
+just not a dedicated page.
+:::
 
 :::caution[SGP30 no longer in the active pipeline]
 SGP30 was part of the original supply list but there is no `sensors/sgp30.py`
